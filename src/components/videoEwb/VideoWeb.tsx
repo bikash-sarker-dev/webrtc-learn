@@ -194,7 +194,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Mic, MicOff, Video, VideoOff, PhoneOff } from "lucide-react";
 
-export default function VideoCallUI(): JSX.Element {
+const VideoCallUI: React.FC = () => {
   const localVideoRef = useRef<HTMLVideoElement>(null);
   const remoteVideoRef = useRef<HTMLVideoElement>(null);
 
@@ -454,4 +454,6 @@ export default function VideoCallUI(): JSX.Element {
       </div>
     </div>
   );
-}
+};
+
+export default VideoCallUI;
