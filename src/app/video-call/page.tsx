@@ -1,7 +1,11 @@
-import React from "react";
+import VideoCallUI from "@/components/videoEwb/VideoWeb";
 
 const page = () => {
-  return <div>web rtc</div>;
+  return (
+    <div>
+      <VideoCallUI />
+    </div>
+  );
 };
 
 export default page;
